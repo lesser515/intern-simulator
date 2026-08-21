@@ -1,0 +1,5 @@
+import { careerTracks } from "../game/data.js";
+
+export function StartScreen({ onCareer }) {
+  return <section className="max-w-3xl mx-auto px-4 py-10"><div className="text-center mb-8"><div className="text-5xl mb-3">🏢</div><h1 className="text-3xl font-black text-slate-900">互联网大厂实习模拟器</h1><p className="text-slate-500 mt-2">12周实习期，你能成功转正吗？</p><h2 className="text-xl font-bold text-slate-800 mt-8">选择你的岗位方向</h2></div><div className="grid gap-3 sm:grid-cols-2">{careerTracks.map((track) => <button key={track.id} onClick={() => onCareer(track.id)} className="text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-indigo-300 hover:shadow-md transition-all"><div className="flex items-center gap-3"><span className="text-3xl">{track.icon}</span><span><strong className="block text-slate-900">{track.name}</strong><span className="text-sm text-slate-500">{track.description}</span></span></div><div className="flex justify-between text-xs mt-3 text-slate-500"><span>💰 {track.salary}元/天</span><span>🟢 HC{track.hc}</span></div></button>)}</div></section>;
+}
