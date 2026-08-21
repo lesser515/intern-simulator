@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>互联网大厂实习模拟器（源码版）</title>
+    <link rel="stylesheet" href="./guide.css?v=2">
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <button class="guide-help-button" id="guide-help-button" type="button" aria-label="打开使用指南" title="使用指南">?</button>
+    <dialog class="guide-dialog" id="guide-dialog" aria-labelledby="guide-title">
+      <div class="guide-header">
+        <div><p class="guide-eyebrow">入职须知</p><h2 id="guide-title">实习生生存指南</h2></div>
+        <button class="guide-close-button" id="guide-close-button" type="button" aria-label="关闭使用指南">×</button>
+      </div>
+      <div class="guide-body">
+        <section class="guide-goal"><span class="guide-section-icon" aria-hidden="true">🎯</span><div><h3>你的目标</h3><p>坚持完成 12 周实习，保住发量与尊严、控制焦虑，同时提升绩效、能力和导师好感，争取转正。</p></div></section>
+        <div class="guide-grid">
+          <section><span class="guide-section-icon" aria-hidden="true">📅</span><h3>每周怎么过</h3><p>处理随机事件和消息，选择工作或恢复行动；完成本周必做任务后，才能进入下一周。</p></section>
+          <section><span class="guide-section-icon" aria-hidden="true">🚨</span><h3>三条红线</h3><p>发量或尊严归零会直接结束实习；焦虑达到 100 也会崩溃。不要只顾着冲绩效。</p></section>
+          <section><span class="guide-section-icon" aria-hidden="true">📊</span><h3>转正看什么</h3><p>绩效、能力、导师好感和人缘都会影响结果。岗位 HC 越少，最终评审要求越高。</p></section>
+          <section><span class="guide-section-icon" aria-hidden="true">💡</span><h3>生存建议</h3><p>前期先建立能力和关系，后期再集中冲刺。连续选择高收益行动通常也会带来更高风险。</p></section>
+        </div>
+      </div>
+      <div class="guide-footer"><label class="guide-checkbox"><input id="guide-hide-next-time" type="checkbox"> 下次不再自动显示</label><button class="guide-start-button" id="guide-start-button" type="button">开始实习</button></div>
+    </dialog>
+    <script src="./guide.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
