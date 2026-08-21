@@ -1,0 +1,4 @@
+@import "../assets/index-CIk85Fsv.css";
+
+.source-app { font-family: "Noto Sans SC", system-ui, sans-serif; }
+.source-app button:focus-visible, .source-app input:focus-visible { outline: 3px solid rgb(129 140 248 / 0.45); outline-offset: 2px; }
